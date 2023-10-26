@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE= edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Grover's Pizza App</title>
+             <link
+              href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+             rel="stylesheet" 
+             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+             crossorigin="anonymous">  
+             <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            <script type ="module" src="scripts/controller/product_controller.js"></script>
+          <script defer src="./scripts/services/payment.js"></script> 
+          <style>
+            /* CSS for positioning the "Pay Now" button at the top right corner */
+            #rzp-button1 {
+                position: absolute;
+                top: 500px; /* Adjust the top distance as needed */
+                right: 450px; /* Adjust the right distance as needed */
+            }
+        </style>
+          </head>
+        <body>
+
+          <div class = "container">
+          <h1 class = " alert alert-danger text-center"> Pizza Menu </h1>
+            <div class=" row" >
+            <div class ="col-8">
+            <div class = "row" id = "output" >
+      <!-- here dynamic columns , card are craeted...-->
+      
+            </div>
+            </div>
+            <div class ="col-4"  id ="basket">
+              Basket Will be here
+
+            <!-- create dynamic li-->
+            </div>
+         
+            </div>
+            <button id="rzp-button1" > Pay Now </button>
+          </div>  
+        </body>
+    </html>
